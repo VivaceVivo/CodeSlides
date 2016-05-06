@@ -1,11 +1,11 @@
 /*
  * Extensions to the reveal.js presentation framework for embedding executable code snippets.
  *
- * all <pre><code> ... </code></pre> - blocks are extended with an 'eval'-button and a result
- * textfield where the evaluationresult will be rendered after 'eval'
+ * all <pre><code> ... </code></pre> - blocks are extended with an onblur 'eval'-event and a result
+ * textfield where the evaluation result will be rendered after 'eval'
  *
  * Blocks that should be evaluated on startup need to set the "data-eval" attribute to "true".
- * Non-Scala Code needs to set the "lang" attribute. Supported Language: "java"
+ * Non-Scala Code needs to set the "lang" attribute. Supported Language: "java" and "off"
  */
 
 var codes = document.getElementsByTagName("code")
